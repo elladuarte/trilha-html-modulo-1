@@ -1,62 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
-</head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+  </head>
+  <body>
+    <h1 id="inicio">
+      Módulo 1 - Primeiros Passos com
+      <abbr title="HyperText Markup Language">HTML</abbr>
+    </h1>
     <hr />
 
     <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+      <li><a href="#sobre-tags">Falando de Tags e seus atributos</a></li>
+      <li><a href="#tags-texto">Tags de texto</a></li>
+      <li>
+        <a href="#tags-lista"
+          >A diferença entre listas ordenadas e não ordenadas</a
+        >
+      </li>
+      <li><a href="#tag-link">Tags de Link</a></li>
+      <li><a href="#referencias">Referências</a></li>
+      <li><a href="#notas">Notas</a></li>
+    </ul>
+    <hr />
+    <h2 id="sobre-tags">Falando sobre as tags e seus atributos</h2>
+    <p>
+      Nesta aula foi apresentada a tag <strong>i</strong> que tem por objetivo
+      marcar o texto em <i>itálico.</i> Em seguida, a tag
+      <strong>strong</strong> que permite colocar o texto ou um fragmento dele
+      em <i>negrito.</i> Quando precisamos inserir uma imagem em um documento
+      HTML,fazemos o uso da tag <strong>img</strong>. Para ajustar o tamanho da
+      imagem, foram utilizados os atributos <i>width</i> e <i>height</i>, que
+      correspondem à largura e à altura, respectivamente. Além disso, o atributo
+      alt foi empregado para fornecer uma descrição da imagem. O atributo
+      <i>src</i> é utilizado para colocar o endereço da imagem.
+    </p>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+      alt="A imagem a seguir é o logotipo do HTML5"
+      width="150"
+      height="150"
+    />
+
+    <p>
+      Entre outros atributos principais pertinentes as tags do HTML, temos como
+      exemplo o atributo <strong style="color: blue"><i>style</i></strong> que
+      permite colocar comandos CSS direto no elemento. Por exemplo foi aplicado
+      tal atributo na tag strong e este permitiu alterar a cor da palavra style
+      para azul.
+    </p>
+
+    <small
+      ><a href="#inicio" title="Voltar para o início da página"
+        >Voltar</a
+      ></small
+    >
+
+    <hr />
+
+    <h2 id="tags-texto">Tags de Textos</h2>
+    <p>
+      A tag <del>font</del> é uma tag obsoleta no HTML, porém ainda está em
+      funcionamento e neste exemplo utilizei ela com o atributo color para mudar
+      a cor do texto a seguir:
+      <br />
+      As tags <font color="red">h1, h2, h3, h4, h5 e h6</font> são utilizadas
+      para definir subtítulos em uma página.
+    </p>
+    <blockquote>
+      "A tag <strong>p</strong> define o corpo do texto, ou seja, seus
+      parágrafos. E neste parágrafo foi utilizada a tag blockquote para definir
+      uma citação."
+    </blockquote>
+    <p>
+      A tag <strong><mark>mark</mark></strong> é utilizada para destacar trechos
+      dos textos que são considerados relevantes. Para sublinhar um texto é
+      importante usar a tag <u><strong>u.</strong></u>
+    </p>
+
+    <h5>Extra 1: Tag sub</h5>
+
+    <p>
+      A tag <strong>sub<sub>*</sub></strong> é usada para colocar um texto em
+      formato subscrito, como em fórmulas químicas. Pode ser usado por exemplo
+      em fórmulas químicas como: O<sub>2</sub><sup>*</sup>
+    </p>
+    <h6>Extra 2: Tag sup:</h6>
+    <p>
+      Já a tag <strong>sup<sup>*</sup></strong> é usada para sobrescrito, sendo
+      comum em potências matemáticas ou referências de rodapé. Exemplo: 2<sup
+        >4</sup
+      >
+      = 16.
+    </p>
+
+    <small
+      ><a href="#inicio" title="Voltar para o início da página"
+        >Voltar</a
+      ></small
+    >
+
+    <hr />
+    <h2 id="tags-lista">Diferença entre Listas Ordenadas e Não Ordenadas</h2>
+    <p>
+      As listas ordenadas são representadas pela tag
+      <i><strong>ol,</strong></i> enquanto as listas não ordenadas são
+      representadas pela tag <i><strong>ul.</strong></i>
+    </p>
+    <blockquote>
+      "É importante observar que dentro dessas tags é obrigatório colocar a tag
+      <i><strong>li</strong></i> porque essa tag de fato vai trazer os itens da
+      lista que está sendo implementada dentro do documento."
+    </blockquote>
+    <p>
+      Segue abaixo a tabela demonstrando como as listas ordenadas e não
+      ordenadas vão se comportar no HTML:
+    </p>
+
+    <table style="width: 200px; height: 200px; border: 1px solid black">
+      <tr>
+        <th>Lista Ordenada</th>
+        <th>Lista Não Ordenada</th>
+      </tr>
+      <tr>
+        <td>
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ol>
+        </td>
+        <td>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <small
+      ><a href="#inicio" title="Voltar para o início da página"
+        >Voltar</a
+      ></small
+    >
+
+    <hr />
+
+    <h2 id="tag-link">Tag Link</h2>
+    <p>
+      A tag a é utilizada para inserir um link para navegar entre páginas. Essa
+      tag possui como atributo o target, sendo que este fornece as opções de
+      <i>_self</i> (que é um comportamento padrão), porque quando clicado no
+      link, ele abre este na mesma aba. Já o <i>_blank </i> abre o site em uma
+      outra aba. O atributo <strong>title</strong> é utilizado para fornecer
+      mais informações quando o usuário passa o mouse sobre determinado trecho.
+    </p>
+    <small
+      ><a href="#inicio" title="Voltar para o início da página"
+        >Voltar</a
+      ></small
+    >
+
+    <h3 id="referencias">Referências:</h3>
+    <ul>
+      <li>
+        <a
+          href="https://pt.m.wikipedia.org/wiki/Ficheiro:HTML5_logo_and_wordmark.svg"
+          target="_blank"
+          >Link de referência para a Imagem HTML5</a
+        >
+      </li>
+
+      <li>
+        <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+      </li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
-
-</body>
+    <h4 id="notas">Notas</h4>
+    <ol>
+      <li><sup>*</sup> O símbolo O<sub>2</sub> significa gás oxigênio.</li>
+    </ol>
+    <small
+      ><a href="#inicio" title="Voltar para o início da página"
+        >Voltar</a
+      ></small
+    >
+  </body>
 </html>
